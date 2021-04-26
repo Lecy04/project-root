@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2072/PNG/512/antivirus_internet_lock_locked_protect_security_shield_icon_127108.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+  
+   
+  </head>
+ <body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <div class="logo">
+                <class="logo_a">
+                  <a class="navbar-brand align-items-center" href="{%url 'home'%}">
+                  <strong>Антивирус</strong><img src="https://cdn.icon-icons.com/icons2/2072/PNG/512/antivirus_internet_lock_locked_protect_security_shield_icon_127108.png" height="25px">
+                </div>
+
+
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="navbar-brand d-flex align-items-center" href="{%url 'home'%}">Главная</a>
+                <a class="navbar-brand d-flex align-items-center" href="{%url 'comparison'%}">Сравнение антивирусов</a>
+                </nav>
+          </div>
+        </div>
+    </header>
+      <div class="color">
+      <div class="container">
+        {% block content %}{% endblock %}  
+      </div>
+      </div>
+    
+      <br><Br>
+      <DIV class="colorfooter"  align="center">
+
+        <br><br>
+        <p class="float-end"><a href="#">Вернуться в начало</a></p>
+        <p class="lead text-muted">Этот сайт создал Золотухин Айдар, ученик Школы №110.</p>
+      
+    </div>
+</body>
+</html>
