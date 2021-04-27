@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="{% static '/css/style.css' %}" rel="stylesheet">
   
-   
-  </head>
+</head>
  <body>
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -30,19 +29,16 @@
           </div>
         </div>
     </header>
-      <div class="color">
-      <div class="container">
+      <div class="edit">
+        <div class="container">
         {% block content %}{% endblock %}  
-      </div>
+        </div>
       </div>
     
-      <br><Br>
-      <DIV class="colorfooter"  align="center">
-
-        <br><br>
+      
+      <div class="editfooter"  align="center">
         <p class="float-end"><a href="#">Вернуться в начало</a></p>
         <p class="lead text-muted">Этот сайт создал Золотухин Айдар, ученик Школы №110.</p>
-      
-    </div>
+      </div>
 </body>
 </html>
